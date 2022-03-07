@@ -1,0 +1,49 @@
+body {
+  margin: 1rem;
+  font-family: Quintessential, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.score_container {
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.score_header {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  height: 2rem;
+  align-self: center;
+  font-family: Quintessential, sans-serif;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.2rem;
+  font-family: Quintessential, sans-serif;
+}
+
+#add-btn {
+  margin-left: 60%;
+}
+
+.score {
+  border: 0.15rem solid black;
+  margin: 1rem 0.5rem 5rem 25%;
+  width: 50%;
+}
+
+.score_list:nth-child(odd) {
+  background-color: #94a7ae;
+}
+
+.score_list:nth-child(even) {
+  background-color: #f4f2f3;
+}
