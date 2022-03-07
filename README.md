@@ -67,7 +67,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- A special thank for @fernandorpm for this amazing [README template](https://github.com/microverseinc/readme-template)
+- A special thank for @leopiresgoss for this amazing [README template](https://github.com/microverseinc/readme-template) and amazing color gradient choice
 
 ## 📝 License
 
