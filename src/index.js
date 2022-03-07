@@ -15,7 +15,7 @@ const scoreClass = document.querySelector('.score');
 let template = '';
 
 Scores.forEach((element) => {
-    template += `<div class = "score_list"<li>${element.name}:${element.score}</li></div>`;
+  template += `<div class = "score_list"<li>${element.name}:${element.score}</li></div>`;
 });
 
 scoreClass.innerHTML = template;
