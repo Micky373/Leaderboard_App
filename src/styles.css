@@ -15,21 +15,25 @@ body {
   align-items: center;
   margin: 2rem;
   font-family: Quintessential, sans-serif;
-  background-image: url("../images/Football_Player.png"), url(../images/Joystick.png), url(../images/PS.png), linear-gradient(
-    to bottom,
-    #1a2537,
-    #262b49,
-    #3b2e58,
-    #562f62,
-    #742b65,
-    #882b69,
-    #9c296c,
-    #b0276c,
-    #c02c77,
-    #d13182,
-    #e1378d,
-    #f23c98
-  );;
+  background-image:
+    url("../images/Football_Player.png"),
+    url(../images/Joystick.png),
+    url(../images/PS.png),
+    linear-gradient(
+      to bottom,
+      #1a2537,
+      #262b49,
+      #3b2e58,
+      #562f62,
+      #742b65,
+      #882b69,
+      #9c296c,
+      #b0276c,
+      #c02c77,
+      #d13182,
+      #e1378d,
+      #f23c98
+    );
   background-repeat: no-repeat;
   background-size: 80%, 20%, 20%, 100%;
   background-position-x: center, 10%, 90%;
@@ -48,7 +52,7 @@ li {
 /* Make adjustment to the linter error on the backgound clip here */
 
 h1 {
-  color: #cc9900;
+  color: #c90;
   text-transform: uppercase;
   line-height: 0.75;
   margin: 10px 0;
@@ -74,7 +78,8 @@ h1 {
   opacity: 0.8;
 }
 
-.score_display h1,.add_score h1 {
+.score_display h1,
+.add_score h1 {
   font-size: 1.5rem;
 }
 
@@ -144,21 +149,23 @@ input {
     align-items: center;
     margin: 2rem;
     font-family: Quintessential, sans-serif;
-    background-image: url("../images/Football_Player.png"), linear-gradient(
-      to bottom,
-      #1a2537,
-      #262b49,
-      #3b2e58,
-      #562f62,
-      #742b65,
-      #882b69,
-      #9c296c,
-      #b0276c,
-      #c02c77,
-      #d13182,
-      #e1378d,
-      #f23c98
-    );;
+    background-image:
+      url("../images/Football_Player.png"),
+      linear-gradient(
+        to bottom,
+        #1a2537,
+        #262b49,
+        #3b2e58,
+        #562f62,
+        #742b65,
+        #882b69,
+        #9c296c,
+        #b0276c,
+        #c02c77,
+        #d13182,
+        #e1378d,
+        #f23c98
+      );
     background-repeat: no-repeat;
     background-size: 70%, 100%;
     background-position-x: center;
@@ -175,6 +182,7 @@ input {
     display: flex;
     flex-direction: row;
   }
+
   .container h1 {
     margin-top: 2rem;
   }
