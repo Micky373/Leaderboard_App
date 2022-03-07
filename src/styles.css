@@ -1,16 +1,82 @@
+
 body {
-  margin: 1rem;
+  background-image: url(https://media.giphy.com/media/gLWTWCg96RA0btDUm0/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
   font-family: Quintessential, sans-serif;
+  background-image:
+    url("../images/Football_Player.png"),
+    url(../images/Joystick.png),
+    url(../images/PS.png),
+    linear-gradient(
+      to bottom,
+      #1a2537,
+      #262b49,
+      #3b2e58,
+      #562f62,
+      #742b65,
+      #882b69,
+      #9c296c,
+      #b0276c,
+      #c02c77,
+      #d13182,
+      #e1378d,
+      #f23c98
+    );
+  background-repeat: no-repeat;
+  background-size: 80%, 20%, 20%, 100%;
+  background-position-x: center, 10%, 90%;
+  background-position-y: center, 40%, 90%;
+  border: 1px solid rgb(114, 41, 41);
+  overflow: auto;
+  box-shadow: 1rem 1rem 2rem;
+  border-radius: 10%;
+  padding: 0.5rem;
 }
 
 li {
   list-style: none;
 }
 
+h1 {
+  color: black;
+  text-transform: uppercase;
+  line-height: 0.75;
+  margin: 10px 0;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 .score_container {
   display: flex;
-  margin-top: 1rem;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+  overflow: auto;
 }
 
 .score_header {
@@ -18,16 +84,36 @@ li {
   gap: 1rem;
 }
 
+.score_display {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  opacity: 0.8;
+}
+
+.add_score {
+  margin-top: 1rem;
+}
+
+.score_display h1,
+.add_score h1 {
+  font-size: 1.5rem;
+}
+
 button {
   height: 2rem;
   align-self: center;
   font-family: Quintessential, sans-serif;
+  border-radius: 50%;
+  box-shadow: 0.05rem 0.05rem 2rem;
+  opacity: 0.9;
 }
 
 input {
   margin: 0.5rem 0;
   padding: 0.2rem;
   font-family: Quintessential, sans-serif;
+  opacity: 0.8;
+  background-color: white;
 }
 
 #add-btn {
@@ -35,17 +121,97 @@ input {
 }
 
 .score {
-  border: 0.15rem solid black;
   margin: auto;
   width: 10rem;
   height: 10rem;
   overflow: auto;
+  border-radius: 5%;
 }
 
-.score_list:nth-child(odd) {
-  background-color: #94a7ae;
+.score_list {
+  width: auto;
+  overflow-x: auto;
 }
 
-.score_list:nth-child(even) {
-  background-color: #f4f2f3;
+::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(182, 120, 120);
+}
+
+#score-0 {
+  background-color: gold;
+}
+
+#score-1 {
+  background-color: silver;
+}
+
+#score-2 {
+  background-color: #cd7f32;
+}
+
+.score_list:nth-child(n+3) {
+  background-color: #8d6b49;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem;
+    font-family: Quintessential, sans-serif;
+    background-image:
+      url("../images/Football_Player.png"),
+      linear-gradient(
+        to bottom,
+        #1a2537,
+        #262b49,
+        #3b2e58,
+        #562f62,
+        #742b65,
+        #882b69,
+        #9c296c,
+        #b0276c,
+        #c02c77,
+        #d13182,
+        #e1378d,
+        #f23c98
+      );
+    background-repeat: no-repeat;
+    background-size: 70%, 100%;
+    background-position-x: center;
+    background-position-y: center;
+    border: 1px solid rgb(114, 41, 41);
+    overflow: auto;
+    height: 85vh;
+    box-shadow: 1rem 1rem 2rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+
+  .score_container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+  }
+
+  .container h1 {
+    margin-top: 2rem;
+  }
+
+  .add_score {
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+
+  .score_display {
+    margin-top: 4rem;
+    margin-left: 1rem;
+  }
 }
