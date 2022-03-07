@@ -7,19 +7,15 @@
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 <br>
 
-<!-- ![desktop gif](images/leaderboardgif.gif)
-
-<br>
-
 ### Desktop
 
-![desktop screenshot](images/leaderboard-screenshot.png)
+![desktop screenshot](./images/Desktop_version.PNG)
 
 <br>
 
 ### Mobile
 
-![desktop screenshot](images/leaderboard-screenshot-mobile.png) -->
+![desktop screenshot](./images/Mobile_version.PNG)
 
 
 ## Live Demo
