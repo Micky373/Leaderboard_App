@@ -75,6 +75,7 @@ h1 {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  margin: auto;
   overflow: auto;
 }
 
@@ -87,6 +88,10 @@ h1 {
   margin-top: 1rem;
   margin-left: 1rem;
   opacity: 0.8;
+}
+
+.add_score {
+  margin-top: 1rem;
 }
 
 .score_display h1,
