@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  margin: 1rem;\r\n  font-family: Quintessential, sans-serif;\r\n}\r\n\r\nli {\r\n  list-style: none;\r\n}\r\n\r\n.score_container {\r\n  display: flex;\r\n  margin-top: 1rem;\r\n  gap: 2rem;\r\n}\r\n\r\n.score_header {\r\n  display: flex;\r\n  gap: 1rem;\r\n}\r\n\r\nbutton {\r\n  height: 2rem;\r\n  align-self: center;\r\n  font-family: Quintessential, sans-serif;\r\n}\r\n\r\ninput {\r\n  margin: 0.5rem 0;\r\n  padding: 0.2rem;\r\n  font-family: Quintessential, sans-serif;\r\n}\r\n\r\n#add-btn {\r\n  margin-left: 60%;\r\n}\r\n\r\n.score {\r\n  border: 0.15rem solid black;\r\n  margin: 1rem 0.5rem 5rem 25%;\r\n  width: 50%;\r\n}\r\n\r\n.score_list:nth-child(odd) {\r\n  background-color: #94a7ae;\r\n}\r\n\r\n.score_list:nth-child(even) {\r\n  background-color: #f4f2f3;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    margin: 1rem;\r\n    font-family: Quintessential, sans-serif;\r\n  }\r\n  \r\n  li {\r\n    list-style: none;\r\n  }\r\n  \r\n  .score_container {\r\n    display: flex;\r\n    margin-top: 1rem;\r\n    gap: 2rem;\r\n  }\r\n  \r\n  .score_header {\r\n    display: flex;\r\n    gap: 1rem;\r\n  }\r\n  \r\n  button {\r\n    height: 2rem;\r\n    align-self: center;\r\n    font-family: Quintessential, sans-serif;\r\n  }\r\n  \r\n  input {\r\n    margin: 0.5rem 0;\r\n    padding: 0.2rem;\r\n    font-family: Quintessential, sans-serif;\r\n  }\r\n  \r\n  #add-btn {\r\n    margin-left: 60%;\r\n  }\r\n  \r\n  .score {\r\n    border: 0.15rem solid black;\r\n    margin: auto;\r\n    width: 10rem;\r\n    height: 10rem;\r\n    overflow: auto;\r\n  }\r\n  \r\n  .score_list:nth-child(odd) {\r\n    background-color: #94a7ae;\r\n  }\r\n  \r\n  .score_list:nth-child(even) {\r\n    background-color: #f4f2f3;\r\n  }\r\n  ", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -480,14 +480,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-class Score {
-  constructor(name, score) {
-    this.name = name;
-    this.score = score;
-  }
+const postScore = async (userInput, scoreInput) => {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5fnWrqyXm0Y5iMiMMw2U/scores/', {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            user: userInput,
+            score: scoreInput,
+        }),
+    });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (postScore);
+
+/***/ }),
+/* 12 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _deliverArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+
+
+const getScore = async () => {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5fnWrqyXm0Y5iMiMMw2U/scores/');
+    const dataObj = await response.json();
+    const dataArr = dataObj.result;
+    dataArr.sort((a, b) => b.score - a.score);
+    (0,_deliverArray_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dataArr);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getScore);
+
+/***/ }),
+/* 13 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ deliverArray)
+/* harmony export */ });
+const scoreClass = document.querySelector('.score');
+let template = '';
+function deliverArray(arrayToBeDisplayed) {
+    arrayToBeDisplayed.forEach((element) => {
+        template += `<div class = "score_list"><li>${element.user}:${element.score}</li></div>`;
+    });
+    scoreClass.innerHTML = template;
+    template = '';
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Score);
 
 /***/ })
 /******/ 	]);
@@ -563,28 +610,27 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_postScore_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_getScore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
 
 
-const score1 = new _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]('Player 1', 100);
-const score2 = new _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]('Player 2', 50);
-const score3 = new _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]('Player 3', 40);
-const score4 = new _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]('Player 4', 30);
-const score5 = new _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]('Player 5', 20);
-const score6 = new _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]('Player 6', 15);
-const score7 = new _modules_scoreClass_js__WEBPACK_IMPORTED_MODULE_1__["default"]('Player 7', 10);
 
-const Scores = [score1, score2, score3, score4, score5, score6, score7];
+const addBtn = document.querySelector('#add-btn');
+const name = document.getElementById('name');
+const score = document.getElementById('score');
+const refresh = document.querySelector('#refresh_btn');
 
-const scoreClass = document.querySelector('.score');
-let template = '';
-
-Scores.forEach((element) => {
-  template += `<div class = "score_list"<li>${element.name}:${element.score}</li></div>`;
+addBtn.addEventListener('click', () => {
+    if (name && score) {
+        (0,_modules_postScore_js__WEBPACK_IMPORTED_MODULE_1__["default"])(name.value, score.value);
+        name.value = '';
+        score.value = '';
+    }
 });
 
-scoreClass.innerHTML = template;
+refresh.addEventListener('click', _modules_getScore_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
+window.addEventListener('load', _modules_getScore_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
 })();
 
 /******/ })()

@@ -36,8 +36,10 @@ input {
 
 .score {
   border: 0.15rem solid black;
-  margin: 1rem 0.5rem 5rem 25%;
-  width: 50%;
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+  overflow: auto;
 }
 
 .score_list:nth-child(odd) {
