@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    margin: 1rem;\r\n    font-family: Quintessential, sans-serif;\r\n  }\r\n  \r\n  li {\r\n    list-style: none;\r\n  }\r\n  \r\n  .score_container {\r\n    display: flex;\r\n    margin-top: 1rem;\r\n    gap: 2rem;\r\n  }\r\n  \r\n  .score_header {\r\n    display: flex;\r\n    gap: 1rem;\r\n  }\r\n  \r\n  button {\r\n    height: 2rem;\r\n    align-self: center;\r\n    font-family: Quintessential, sans-serif;\r\n  }\r\n  \r\n  input {\r\n    margin: 0.5rem 0;\r\n    padding: 0.2rem;\r\n    font-family: Quintessential, sans-serif;\r\n  }\r\n  \r\n  #add-btn {\r\n    margin-left: 60%;\r\n  }\r\n  \r\n  .score {\r\n    border: 0.15rem solid black;\r\n    margin: 1rem 0.5rem 5rem 25%;\r\n    width: 50%;\r\n  }\r\n  \r\n  .score_list:nth-child(odd) {\r\n    background-color: #94a7ae;\r\n  }\r\n  \r\n  .score_list:nth-child(even) {\r\n    background-color: #f4f2f3;\r\n  }\r\n  ", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  margin: 1rem;\r\n  font-family: Quintessential, sans-serif;\r\n}\r\n\r\nli {\r\n  list-style: none;\r\n}\r\n\r\n.score_container {\r\n  display: flex;\r\n  margin-top: 1rem;\r\n  gap: 2rem;\r\n}\r\n\r\n.score_header {\r\n  display: flex;\r\n  gap: 1rem;\r\n}\r\n\r\nbutton {\r\n  height: 2rem;\r\n  align-self: center;\r\n  font-family: Quintessential, sans-serif;\r\n}\r\n\r\ninput {\r\n  margin: 0.5rem 0;\r\n  padding: 0.2rem;\r\n  font-family: Quintessential, sans-serif;\r\n}\r\n\r\n#add-btn {\r\n  margin-left: 60%;\r\n}\r\n\r\n.score {\r\n  border: 0.15rem solid black;\r\n  margin: 1rem 0.5rem 5rem 25%;\r\n  width: 50%;\r\n}\r\n\r\n.score_list:nth-child(odd) {\r\n  background-color: #94a7ae;\r\n}\r\n\r\n.score_list:nth-child(even) {\r\n  background-color: #f4f2f3;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -481,10 +481,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 class Score {
-    constructor(name, score) {
-        this.name = name;
-        this.score = score;
-    }
+  constructor(name, score) {
+    this.name = name;
+    this.score = score;
+  }
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Score);
@@ -581,7 +581,7 @@ const scoreClass = document.querySelector('.score');
 let template = '';
 
 Scores.forEach((element) => {
-    template += `<div class = "score_list"<li>${element.name}:${element.score}</li></div>`;
+  template += `<div class = "score_list"<li>${element.name}:${element.score}</li></div>`;
 });
 
 scoreClass.innerHTML = template;
