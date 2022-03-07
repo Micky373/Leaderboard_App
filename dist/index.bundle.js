@@ -359,7 +359,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\nbody {\r\n  background-image: url(https://media.giphy.com/media/gLWTWCg96RA0btDUm0/giphy.gif);\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  margin: 0;\r\n  height: 100vh;\r\n  overflow: hidden;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 2rem;\r\n  font-family: Quintessential, sans-serif;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + "), linear-gradient(\r\n    to bottom,\r\n    #1a2537,\r\n    #262b49,\r\n    #3b2e58,\r\n    #562f62,\r\n    #742b65,\r\n    #882b69,\r\n    #9c296c,\r\n    #b0276c,\r\n    #c02c77,\r\n    #d13182,\r\n    #e1378d,\r\n    #f23c98\r\n  );;\r\n  background-repeat: no-repeat;\r\n  background-size: 80%, 20%, 20%, 100%;\r\n  background-position-x: center, 10%, 90%;\r\n  background-position-y: center, 30%, 90%;\r\n  border: 1px solid rgb(114, 41, 41);\r\n  overflow: auto;\r\n  box-shadow: 1rem 1rem 2rem;\r\n  border-radius: 10%;\r\n  padding: 0.5rem;\r\n}\r\n\r\nli {\r\n  list-style: none;\r\n}\r\n\r\n/* Make adjustment to the linter error on the backgound clip here */\r\n\r\nh1 {\r\n  color: #cc9900;\r\n  text-transform: uppercase;\r\n  line-height: 0.75;\r\n  margin: 10px 0;\r\n  text-align: center;\r\n}\r\n\r\n.score_container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n  justify-content: center;\r\n  overflow: auto;\r\n}\r\n\r\n.score_header {\r\n  display: flex;\r\n  gap: 1rem;\r\n}\r\n\r\n.score_display {\r\n  margin-top: 1rem;\r\n  margin-left: 1rem;\r\n  opacity: 0.8;\r\n}\r\n\r\n.score_display h1,.add_score h1 {\r\n  font-size: 1.5rem;\r\n}\r\n\r\nbutton {\r\n  height: 2rem;\r\n  align-self: center;\r\n  font-family: Quintessential, sans-serif;\r\n  border-radius: 50%;\r\n  box-shadow: 0.05rem 0.05rem 2rem;\r\n  opacity: 0.9;\r\n}\r\n\r\ninput {\r\n  margin: 0.5rem 0;\r\n  padding: 0.2rem;\r\n  font-family: Quintessential, sans-serif;\r\n  opacity: 0.8;\r\n}\r\n\r\n#add-btn {\r\n  margin-left: 60%;\r\n}\r\n\r\n.score {\r\n  margin: auto;\r\n  width: 10rem;\r\n  height: 10rem;\r\n  overflow: auto;\r\n  border-radius: 5%;\r\n}\r\n\r\n.score_list {\r\n  width: auto;\r\n  overflow-x: auto;\r\n}\r\n\r\n::-webkit-scrollbar {\r\n  width: 2px;\r\n  height: 3px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb {\r\n  background: rgb(182, 120, 120);\r\n}\r\n\r\n#score-0 {\r\n  background-color: gold;\r\n}\r\n\r\n#score-1 {\r\n  background-color: silver;\r\n}\r\n\r\n#score-2 {\r\n  background-color: #cd7f32;\r\n}\r\n\r\n.score_list:nth-child(n+3) {\r\n  background-color: #8d6b49;\r\n}\r\n\r\n@media (min-width: 600px) {\r\n  .container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    margin: 2rem;\r\n    font-family: Quintessential, sans-serif;\r\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "), linear-gradient(\r\n      to bottom,\r\n      #1a2537,\r\n      #262b49,\r\n      #3b2e58,\r\n      #562f62,\r\n      #742b65,\r\n      #882b69,\r\n      #9c296c,\r\n      #b0276c,\r\n      #c02c77,\r\n      #d13182,\r\n      #e1378d,\r\n      #f23c98\r\n    );;\r\n    background-repeat: no-repeat;\r\n    background-size: 70%, 100%;\r\n    background-position-x: center;\r\n    background-position-y: center;\r\n    border: 1px solid rgb(114, 41, 41);\r\n    overflow: auto;\r\n    height: 85vh;\r\n    box-shadow: 1rem 1rem 2rem;\r\n    border-radius: 50%;\r\n    padding: 0.5rem;\r\n  }\r\n\r\n  .score_container {\r\n    display: flex;\r\n    flex-direction: row;\r\n  }\r\n  .container h1 {\r\n    margin-top: 2rem;\r\n  }\r\n\r\n  .add_score {\r\n    margin-top: 5rem;\r\n    margin-left: 5rem;\r\n  }\r\n\r\n  .score_display {\r\n    margin-top: 4rem;\r\n    margin-left: 1rem;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\r\nbody {\r\n  background-image: url(https://media.giphy.com/media/gLWTWCg96RA0btDUm0/giphy.gif);\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  margin: 0;\r\n  height: 100vh;\r\n  overflow: hidden;\r\n}\r\n\r\n.container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  margin: 2rem;\r\n  font-family: Quintessential, sans-serif;\r\n  background-image:\r\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "),\r\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + "),\r\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + "),\r\n    linear-gradient(\r\n      to bottom,\r\n      #1a2537,\r\n      #262b49,\r\n      #3b2e58,\r\n      #562f62,\r\n      #742b65,\r\n      #882b69,\r\n      #9c296c,\r\n      #b0276c,\r\n      #c02c77,\r\n      #d13182,\r\n      #e1378d,\r\n      #f23c98\r\n    );\r\n  background-repeat: no-repeat;\r\n  background-size: 80%, 20%, 20%, 100%;\r\n  background-position-x: center, 10%, 90%;\r\n  background-position-y: center, 40%, 90%;\r\n  border: 1px solid rgb(114, 41, 41);\r\n  overflow: auto;\r\n  box-shadow: 1rem 1rem 2rem;\r\n  border-radius: 10%;\r\n  padding: 0.5rem;\r\n}\r\n\r\nli {\r\n  list-style: none;\r\n}\r\n\r\nh1 {\r\n  color: black;\r\n  text-transform: uppercase;\r\n  line-height: 0.75;\r\n  margin: 10px 0;\r\n  text-align: center;\r\n  animation: glow 1s ease-in-out infinite alternate;\r\n  -webkit-animation: glow 1s ease-in-out infinite alternate;\r\n  -moz-animation: glow 1s ease-in-out infinite alternate;\r\n}\r\n\r\n@keyframes glow {\r\n  from {\r\n    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;\r\n  }\r\n  to {\r\n    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;\r\n  }\r\n}\r\n\r\n.score_container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n  justify-content: center;\r\n  overflow: auto;\r\n}\r\n\r\n.score_header {\r\n  display: flex;\r\n  gap: 1rem;\r\n}\r\n\r\n.score_display {\r\n  margin-top: 1rem;\r\n  margin-left: 1rem;\r\n  opacity: 0.8;\r\n}\r\n\r\n.score_display h1,\r\n.add_score h1 {\r\n  font-size: 1.5rem;\r\n}\r\n\r\nbutton {\r\n  height: 2rem;\r\n  align-self: center;\r\n  font-family: Quintessential, sans-serif;\r\n  border-radius: 50%;\r\n  box-shadow: 0.05rem 0.05rem 2rem;\r\n  opacity: 0.9;\r\n}\r\n\r\ninput {\r\n  margin: 0.5rem 0;\r\n  padding: 0.2rem;\r\n  font-family: Quintessential, sans-serif;\r\n  opacity: 0.8;\r\n  background-color: white;\r\n}\r\n\r\n#add-btn {\r\n  margin-left: 60%;\r\n}\r\n\r\n.score {\r\n  margin: auto;\r\n  width: 10rem;\r\n  height: 10rem;\r\n  overflow: auto;\r\n  border-radius: 5%;\r\n}\r\n\r\n.score_list {\r\n  width: auto;\r\n  overflow-x: auto;\r\n}\r\n\r\n::-webkit-scrollbar {\r\n  width: 2px;\r\n  height: 3px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb {\r\n  background: rgb(182, 120, 120);\r\n}\r\n\r\n#score-0 {\r\n  background-color: gold;\r\n}\r\n\r\n#score-1 {\r\n  background-color: silver;\r\n}\r\n\r\n#score-2 {\r\n  background-color: #cd7f32;\r\n}\r\n\r\n.score_list:nth-child(n+3) {\r\n  background-color: #8d6b49;\r\n}\r\n\r\n@media (min-width: 600px) {\r\n  .container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    margin: 2rem;\r\n    font-family: Quintessential, sans-serif;\r\n    background-image:\r\n      url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + "),\r\n      linear-gradient(\r\n        to bottom,\r\n        #1a2537,\r\n        #262b49,\r\n        #3b2e58,\r\n        #562f62,\r\n        #742b65,\r\n        #882b69,\r\n        #9c296c,\r\n        #b0276c,\r\n        #c02c77,\r\n        #d13182,\r\n        #e1378d,\r\n        #f23c98\r\n      );\r\n    background-repeat: no-repeat;\r\n    background-size: 70%, 100%;\r\n    background-position-x: center;\r\n    background-position-y: center;\r\n    border: 1px solid rgb(114, 41, 41);\r\n    overflow: auto;\r\n    height: 85vh;\r\n    box-shadow: 1rem 1rem 2rem;\r\n    border-radius: 50%;\r\n    padding: 0.5rem;\r\n  }\r\n\r\n  .score_container {\r\n    display: flex;\r\n    flex-direction: row;\r\n  }\r\n\r\n  .container h1 {\r\n    margin-top: 2rem;\r\n  }\r\n\r\n  .add_score {\r\n    margin-top: 5rem;\r\n    margin-left: 5rem;\r\n  }\r\n\r\n  .score_display {\r\n    margin-top: 4rem;\r\n    margin-left: 1rem;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -542,17 +542,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const postScore = async (userInput, scoreInput) => {
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5fnWrqyXm0Y5iMiMMw2U/scores/', {
-        method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            user: userInput,
-            score: scoreInput,
-        }),
-    });
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5fnWrqyXm0Y5iMiMMw2U/scores/', {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      user: userInput,
+      score: scoreInput,
+    }),
+  });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (postScore);
@@ -569,11 +569,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const getScore = async () => {
-    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5fnWrqyXm0Y5iMiMMw2U/scores/');
-    const dataObj = await response.json();
-    const dataArr = dataObj.result;
-    dataArr.sort((a, b) => b.score - a.score);
-    (0,_deliverArray_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dataArr);
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5fnWrqyXm0Y5iMiMMw2U/scores/');
+  const dataObj = await response.json();
+  const dataArr = dataObj.result;
+  dataArr.sort((a, b) => b.score - a.score);
+  (0,_deliverArray_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dataArr);
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getScore);
@@ -744,11 +744,11 @@ const score = document.getElementById('score');
 const refresh = document.querySelector('#refresh_btn');
 
 addBtn.addEventListener('click', () => {
-    if (name && score) {
-        (0,_modules_postScore_js__WEBPACK_IMPORTED_MODULE_1__["default"])(name.value, score.value);
-        name.value = '';
-        score.value = '';
-    }
+  if (name && score) {
+    (0,_modules_postScore_js__WEBPACK_IMPORTED_MODULE_1__["default"])(name.value, score.value);
+    name.value = '';
+    score.value = '';
+  }
 });
 
 refresh.addEventListener('click', _modules_getScore_js__WEBPACK_IMPORTED_MODULE_2__["default"]);

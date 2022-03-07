@@ -37,7 +37,7 @@ body {
   background-repeat: no-repeat;
   background-size: 80%, 20%, 20%, 100%;
   background-position-x: center, 10%, 90%;
-  background-position-y: center, 30%, 90%;
+  background-position-y: center, 40%, 90%;
   border: 1px solid rgb(114, 41, 41);
   overflow: auto;
   box-shadow: 1rem 1rem 2rem;
@@ -49,14 +49,24 @@ li {
   list-style: none;
 }
 
-/* Make adjustment to the linter error on the backgound clip here */
-
 h1 {
-  color: #c90;
+  color: black;
   text-transform: uppercase;
   line-height: 0.75;
   margin: 10px 0;
   text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 .score_container {
@@ -97,6 +107,7 @@ input {
   padding: 0.2rem;
   font-family: Quintessential, sans-serif;
   opacity: 0.8;
+  background-color: white;
 }
 
 #add-btn {
