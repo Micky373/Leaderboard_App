@@ -2,8 +2,6 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard
-
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 <br>
 
@@ -69,7 +67,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- A special thank for @fernandorpm for this amazing [README template](https://github.com/microverseinc/readme-template)
+- A special thank for @leopiresgoss for this amazing [README template](https://github.com/microverseinc/readme-template) and amazing color gradient choice
 
 ## 📝 License
 
